@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stock Market Prices</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f3f3f3;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    header, footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+    nav {
+        margin-bottom: 20px;
+    }
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        margin: 0 5px;
+        border-radius: 5px;
+        background-color: #555;
+        transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+        background-color: #777;
+    }
+    .search-container {
+        margin-bottom: 20px;
+    }
+    .search-container input[type=text] {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        width: 200px;
+    }
+    .search-container button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: #4caf50;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .search-container button:hover {
+        background-color: #45a049;
+    }
+    .stock {
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+    .stock:hover {
+        transform: translateY(-5px);
+    }
+    .stock h2 {
+        margin: 0;
+        font-size: 24px;
+        color: #333;
+    }
+    .price {
+        font-size: 36px;
+        color: #4caf50;
+        margin-top: 10px;
+    }
+    .change {
+        font-size: 18px;
+        color: #777;
+        margin-top: 5px;
+    }
+    .info {
+        margin-top: 10px;
+    }
+    .logo {
+        width: 50px;
+        height: auto;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+    .news {
+        margin-top: 40px;
+    }
+    .news-item {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .news-item h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Stock Market Prices</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="stock">
+            <h2><img src="apple_logo.png" alt="Apple Logo" class="logo">Apple Inc. (AAPL)</h2>
+            <div class="price">$132.05</div>
+            <div class="change">+0.75 (0.57%)</div>
+            <div class="info">
+                <p>Market Cap: $2.2T</p>
+                <p>PE Ratio: 37.45</p>
+            </div>
+        </div>
+
+        <!-- Other stock items here -->
+
+        <div class="news">
+            <h2>Financial News</h2>
+            <div class="news-item">
+                <h3>Stock Market Soars to New Heights</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget massa libero. Morbi sit amet tortor ac nulla semper interdum eu id nulla.</p>
+            </div>
+            <div class="news-item">
+                <h3>Federal Reserve Announces Interest Rate Hike</h3>
+                <p>Etiam euismod pretium enim, sit amet mollis libero eleifend non. Pellentesque sed malesuada sapien, vitae tincidunt libero.</p>
+            </div>
+            <div class="news-item">
+                <h3>Tech Stocks Continue to Dominate Market</h3>
+                <p>Sed consequat sollicitudin odio, eget aliquet erat mollis et. Vestibulum eget nunc quis urna varius convallis.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Stock Market Prices</p>
+    </footer>
+</body>
+</html>
